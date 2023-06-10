@@ -20,6 +20,12 @@ namespace MPI_Thu_Thap.BUS
         {
             this.pageNumber = pagenumber;
         }
+        public void public_a()
+        {
+
+        }
+        public void public_b() { }  
+
         public void download()
         {
             string Url = "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?render=index";

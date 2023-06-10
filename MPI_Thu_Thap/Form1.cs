@@ -18,7 +18,7 @@ namespace MPI_Thu_Thap
             cbbLimit.Text = "5";
             cbbLimit.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
+        
         private void btnStart_Click(object sender, EventArgs e)
         {
             pageNumber = int.Parse(cbbLimit.Text);
@@ -37,7 +37,7 @@ namespace MPI_Thu_Thap
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
             getData data = new getData(pageNumber);
-            data.download();
+            data.download();            
         }
 
         private void backgroundWorker2_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
@@ -54,6 +54,6 @@ namespace MPI_Thu_Thap
         {
             backgroundWorker2.RunWorkerAsync();
         }
-
+        
     }
 }
